@@ -17,4 +17,4 @@ if "%JAVA_HOME:~-1%" EQU "\" set "JAVA_HOME=%JAVA_HOME:~0,-1%"
 set JAVA="%JAVA_HOME%"\bin\java
 set APP_HOME=%~dp0%
 
-call %JAVA% "-jar" %APP_HOME%\.jar
+call %JAVA% "-jar" %APP_HOME%\dubbo-admin-server-0.1.jar
