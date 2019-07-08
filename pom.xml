@@ -8,6 +8,7 @@
     <url>http://maven.apache.org</url>
     <modules>
         <module>springboot-dubbo-samples</module>
+        <module>springboot-elasticsearch-samples</module>
     </modules>
 
     <properties>
