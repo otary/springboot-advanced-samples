@@ -3,6 +3,7 @@ package cn.chenzw.springboot.duubo.client;
 import cn.chenzw.springboot.dubbo.api.domain.dto.BillDto;
 import cn.chenzw.springboot.dubbo.client.DubboClientApp;
 import cn.chenzw.springboot.dubbo.client.dubbo.BillDubboConsumerService;
+import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,7 +25,8 @@ public class DubboClientTests {
     public void testGetByIdCard() {
         BillDto billDto = billDubboConsumerService.getByIdCard("123");
 
-        System.out.println(billDto);
+        Assert.assertEquals(billDto.getName(), "zhangsan");
+        Assert.assertEquals(billDto.getIdCard(), "123");
     }
 
 }

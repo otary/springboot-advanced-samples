@@ -2,7 +2,7 @@ package cn.chenzw.springboot.dubbo.server.dubbo.impl;
 
 import cn.chenzw.springboot.dubbo.api.domain.dto.BillDto;
 import cn.chenzw.springboot.dubbo.api.service.BillService;
-import com.alibaba.dubbo.config.annotation.Service;
+import org.apache.dubbo.config.annotation.Service;
 
 import java.math.BigDecimal;
 

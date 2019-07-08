@@ -71,12 +71,12 @@
                 <version>${pagehelper.version}</version>
             </dependency>
 
+
             <dependency>
                 <groupId>org.apache.dubbo</groupId>
                 <artifactId>dubbo-dependencies-bom</artifactId>
                 <version>${dubbo.version}</version>
             </dependency>
-
 
             <dependency>
                 <groupId>org.apache.dubbo</groupId>
