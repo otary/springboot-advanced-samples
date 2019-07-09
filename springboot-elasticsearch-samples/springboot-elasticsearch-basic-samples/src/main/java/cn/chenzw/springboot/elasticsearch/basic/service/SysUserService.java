@@ -44,4 +44,21 @@ public class SysUserService {
         return searchPageResults.getContent();
     }
 
+    List<SysUser> findByUsernameAndState(String username, Byte state) {
+        return sysUserRepository.findByUsernameAndState(username, state);
+    }
+
+    List<SysUser> findByUsernameOrName(String username, String name) {
+        return sysUserRepository.findByUsernameOrName(username, name);
+    }
+
+    Page<SysUser> findByUsername(String username, Pageable pageable) {
+        return sysUserRepository.findByUsername(username, pageable);
+    }
+
+    Page<SysUser> findByUsernameLike(String username, Pageable pageable) {
+        return sysUserRepository.findByUsernameLike(username, pageable);
+    }
+
+
 }
