@@ -9,6 +9,7 @@
     <modules>
         <module>springboot-dubbo-samples</module>
         <module>springboot-elasticsearch-samples</module>
+        <module>springboot-message-samples</module>
     </modules>
 
     <properties>
