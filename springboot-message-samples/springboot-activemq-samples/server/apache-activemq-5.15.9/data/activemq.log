@@ -1,0 +1,26 @@
+2019-07-10 23:48:13,370 | INFO  | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@754ba872: startup date [Wed Jul 10 23:48:13 CST 2019]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | main
+2019-07-10 23:48:14,746 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[C:\Users\chenzw\Desktop\apache-activemq-5.15.9-bin\apache-activemq-5.15.9\bin\..\data\kahadb] | org.apache.activemq.broker.BrokerService | main
+2019-07-10 23:48:14,994 | INFO  | PListStore:[C:\Users\chenzw\Desktop\apache-activemq-5.15.9-bin\apache-activemq-5.15.9\bin\..\data\localhost\tmp_storage] started | org.apache.activemq.store.kahadb.plist.PListStoreImpl | main
+2019-07-10 23:48:15,210 | INFO  | Apache ActiveMQ 5.15.9 (localhost, ID:DESKTOP-ML2S7G9-65349-1562773695057-0:1) is starting | org.apache.activemq.broker.BrokerService | main
+2019-07-10 23:48:15,240 | INFO  | Listening for connections at: tcp://DESKTOP-ML2S7G9:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2019-07-10 23:48:15,243 | INFO  | Connector openwire started | org.apache.activemq.broker.TransportConnector | main
+2019-07-10 23:48:15,253 | INFO  | Listening for connections at: amqp://DESKTOP-ML2S7G9:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2019-07-10 23:48:15,256 | INFO  | Connector amqp started | org.apache.activemq.broker.TransportConnector | main
+2019-07-10 23:48:15,264 | INFO  | Listening for connections at: stomp://DESKTOP-ML2S7G9:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2019-07-10 23:48:15,269 | INFO  | Connector stomp started | org.apache.activemq.broker.TransportConnector | main
+2019-07-10 23:48:15,276 | INFO  | Listening for connections at: mqtt://DESKTOP-ML2S7G9:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2019-07-10 23:48:15,279 | INFO  | Connector mqtt started | org.apache.activemq.broker.TransportConnector | main
+2019-07-10 23:48:15,292 | INFO  | Starting Jetty server | org.apache.activemq.transport.WebTransportServerSupport | main
+2019-07-10 23:48:15,347 | INFO  | Creating Jetty connector | org.apache.activemq.transport.WebTransportServerSupport | main
+2019-07-10 23:48:15,439 | WARN  | ServletContext@o.e.j.s.ServletContextHandler@573906eb{/,null,STARTING} has uncovered http methods for path: / | org.eclipse.jetty.security.SecurityHandler | main
+2019-07-10 23:48:15,505 | INFO  | Listening for connections at ws://DESKTOP-ML2S7G9:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.ws.WSTransportServer | main
+2019-07-10 23:48:15,507 | INFO  | Connector ws started | org.apache.activemq.broker.TransportConnector | main
+2019-07-10 23:48:15,510 | INFO  | Apache ActiveMQ 5.15.9 (localhost, ID:DESKTOP-ML2S7G9-65349-1562773695057-0:1) started | org.apache.activemq.broker.BrokerService | main
+2019-07-10 23:48:15,513 | INFO  | For help or more information please see: http://activemq.apache.org | org.apache.activemq.broker.BrokerService | main
+2019-07-10 23:48:15,526 | WARN  | Store limit is 102400 mb (current store usage is 0 mb). The data directory: C:\Users\chenzw\Desktop\apache-activemq-5.15.9-bin\apache-activemq-5.15.9\bin\..\data\kahadb only has 61651 mb of usable space. - resetting to maximum available disk space: 61651 mb | org.apache.activemq.broker.BrokerService | main
+2019-07-10 23:48:16,630 | INFO  | No Spring WebApplicationInitializer types detected on classpath | /admin | main
+2019-07-10 23:48:16,813 | INFO  | ActiveMQ WebConsole available at http://0.0.0.0:8161/ | org.apache.activemq.web.WebConsoleStarter | main
+2019-07-10 23:48:16,814 | INFO  | ActiveMQ Jolokia REST API available at http://0.0.0.0:8161/api/jolokia/ | org.apache.activemq.web.WebConsoleStarter | main
+2019-07-10 23:48:16,997 | INFO  | Initializing Spring FrameworkServlet 'dispatcher' | /admin | main
+2019-07-10 23:48:17,279 | INFO  | No Spring WebApplicationInitializer types detected on classpath | /api | main
+2019-07-10 23:48:19,446 | INFO  | jolokia-agent: Using policy access restrictor classpath:/jolokia-access.xml | /api | main
