@@ -10,3 +10,7 @@ http://localhost:15672
 
 - 账号: `guest`
 - 密码: `guest`
+
+#### 运行
+
+> startup.cmd

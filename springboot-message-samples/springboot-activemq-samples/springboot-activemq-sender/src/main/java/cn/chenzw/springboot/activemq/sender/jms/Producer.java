@@ -20,8 +20,8 @@ public class Producer {
         jmsTemplate.convertAndSend(destination, message);
     }
 
-    @JmsListener(destination = "samples.queue")
+    @JmsListener(destination = "receiver.queue")
     public void consumerMessage(String text) {
-        System.out.println("从samples.queue队列收到的回复报文为:" + text);
+        System.out.println("------------------- 从receiver.queue收到回复报文: " + text + " ---------------------");
     }
 }

@@ -19,9 +19,9 @@ public class ProducerTests {
 
     @Test
     public void testSendMessage() throws InterruptedException {
-        Destination destination = new ActiveMQQueue("test.queue");
+        Destination destination = new ActiveMQQueue("sender.queue");
 
-        for (int i = 0; i < 100; i++) {
+        for (int i = 0; i < 10; i++) {
             producer.sendMessage(destination, "hello, my name is zhagnsan");
         }
     }

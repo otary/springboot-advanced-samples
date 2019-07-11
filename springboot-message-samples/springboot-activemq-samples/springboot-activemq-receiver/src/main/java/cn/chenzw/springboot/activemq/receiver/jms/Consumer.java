@@ -7,10 +7,11 @@ import org.springframework.stereotype.Component;
 @Component
 public class Consumer {
 
-    @JmsListener(destination = "test.queue")
-    @SendTo("samples.queue")
+    @JmsListener(destination = "sender.queue")
+    @SendTo("receiver.queue")
     public String receiveQueue(String text) {
-        System.out.println("Consumer收到报文: " + text);
-        return "return message" + text;
+        System.out.println("------------------- Consumer收到报文: " + text + " ------------------");
+
+        return "返回 message: " + text;
     }
 }
