@@ -24,3 +24,249 @@
 2019-07-10 23:48:16,997 | INFO  | Initializing Spring FrameworkServlet 'dispatcher' | /admin | main
 2019-07-10 23:48:17,279 | INFO  | No Spring WebApplicationInitializer types detected on classpath | /api | main
 2019-07-10 23:48:19,446 | INFO  | jolokia-agent: Using policy access restrictor classpath:/jolokia-access.xml | /api | main
+2019-07-11 13:08:33,900 | INFO  | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@754ba872: startup date [Thu Jul 11 13:08:33 CST 2019]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | main
+2019-07-11 13:08:35,358 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[C:\Users\chenzw\IdeaProjects\springboot-advanced-samples\springboot-message-samples\springboot-activemq-samples\server\apache-activemq-5.15.9\bin\..\data\kahadb] | org.apache.activemq.broker.BrokerService | main
+2019-07-11 13:08:35,453 | INFO  | Page File: C:\Users\chenzw\IdeaProjects\springboot-advanced-samples\springboot-message-samples\springboot-activemq-samples\server\apache-activemq-5.15.9\bin\..\data\kahadb\db.data. Recovering pageFile free list due to prior unclean shutdown.. | org.apache.activemq.store.kahadb.disk.page.PageFile | KahaDB Index Free Page Recovery
+2019-07-11 13:08:35,462 | INFO  | Page File: C:\Users\chenzw\IdeaProjects\springboot-advanced-samples\springboot-message-samples\springboot-activemq-samples\server\apache-activemq-5.15.9\bin\..\data\kahadb\db.data. Recovered pageFile free list of size: 0 | org.apache.activemq.store.kahadb.disk.page.PageFile | KahaDB Index Free Page Recovery
+2019-07-11 13:08:35,465 | INFO  | KahaDB is version 6 | org.apache.activemq.store.kahadb.MessageDatabase | main
+2019-07-11 13:08:35,573 | INFO  | PListStore:[C:\Users\chenzw\IdeaProjects\springboot-advanced-samples\springboot-message-samples\springboot-activemq-samples\server\apache-activemq-5.15.9\bin\..\data\localhost\tmp_storage] started | org.apache.activemq.store.kahadb.plist.PListStoreImpl | main
+2019-07-11 13:08:35,734 | INFO  | Apache ActiveMQ 5.15.9 (localhost, ID:DESKTOP-ML2S7G9-51869-1562821715597-0:1) is starting | org.apache.activemq.broker.BrokerService | main
+2019-07-11 13:08:35,766 | INFO  | Listening for connections at: tcp://DESKTOP-ML2S7G9:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2019-07-11 13:08:35,769 | INFO  | Connector openwire started | org.apache.activemq.broker.TransportConnector | main
+2019-07-11 13:08:35,780 | INFO  | Listening for connections at: amqp://DESKTOP-ML2S7G9:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2019-07-11 13:08:35,784 | INFO  | Connector amqp started | org.apache.activemq.broker.TransportConnector | main
+2019-07-11 13:08:35,791 | INFO  | Listening for connections at: stomp://DESKTOP-ML2S7G9:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2019-07-11 13:08:35,795 | INFO  | Connector stomp started | org.apache.activemq.broker.TransportConnector | main
+2019-07-11 13:08:35,803 | INFO  | Listening for connections at: mqtt://DESKTOP-ML2S7G9:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2019-07-11 13:08:35,807 | INFO  | Connector mqtt started | org.apache.activemq.broker.TransportConnector | main
+2019-07-11 13:08:35,820 | INFO  | Starting Jetty server | org.apache.activemq.transport.WebTransportServerSupport | main
+2019-07-11 13:08:35,915 | INFO  | Creating Jetty connector | org.apache.activemq.transport.WebTransportServerSupport | main
+2019-07-11 13:08:36,003 | WARN  | ServletContext@o.e.j.s.ServletContextHandler@6f19ac19{/,null,STARTING} has uncovered http methods for path: / | org.eclipse.jetty.security.SecurityHandler | main
+2019-07-11 13:08:36,075 | INFO  | Listening for connections at ws://DESKTOP-ML2S7G9:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.ws.WSTransportServer | main
+2019-07-11 13:08:36,077 | INFO  | Connector ws started | org.apache.activemq.broker.TransportConnector | main
+2019-07-11 13:08:36,080 | INFO  | Apache ActiveMQ 5.15.9 (localhost, ID:DESKTOP-ML2S7G9-51869-1562821715597-0:1) started | org.apache.activemq.broker.BrokerService | main
+2019-07-11 13:08:36,083 | INFO  | For help or more information please see: http://activemq.apache.org | org.apache.activemq.broker.BrokerService | main
+2019-07-11 13:08:36,105 | WARN  | Store limit is 102400 mb (current store usage is 0 mb). The data directory: C:\Users\chenzw\IdeaProjects\springboot-advanced-samples\springboot-message-samples\springboot-activemq-samples\server\apache-activemq-5.15.9\bin\..\data\kahadb only has 60776 mb of usable space. - resetting to maximum available disk space: 60776 mb | org.apache.activemq.broker.BrokerService | main
+2019-07-11 13:08:37,231 | INFO  | No Spring WebApplicationInitializer types detected on classpath | /admin | main
+2019-07-11 13:08:37,434 | INFO  | ActiveMQ WebConsole available at http://0.0.0.0:8161/ | org.apache.activemq.web.WebConsoleStarter | main
+2019-07-11 13:08:37,435 | INFO  | ActiveMQ Jolokia REST API available at http://0.0.0.0:8161/api/jolokia/ | org.apache.activemq.web.WebConsoleStarter | main
+2019-07-11 13:08:37,633 | INFO  | Initializing Spring FrameworkServlet 'dispatcher' | /admin | main
+2019-07-11 13:08:38,009 | INFO  | No Spring WebApplicationInitializer types detected on classpath | /api | main
+2019-07-11 13:09:52,900 | INFO  | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@754ba872: startup date [Thu Jul 11 13:09:52 CST 2019]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | main
+2019-07-11 13:11:25,114 | INFO  | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@754ba872: startup date [Thu Jul 11 13:11:25 CST 2019]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | main
+2019-07-11 13:11:26,550 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[C:\Users\chenzw\IdeaProjects\springboot-advanced-samples\springboot-message-samples\springboot-activemq-samples\server\apache-activemq-5.15.9\bin\..\data\kahadb] | org.apache.activemq.broker.BrokerService | main
+2019-07-11 13:11:26,642 | INFO  | Page File: C:\Users\chenzw\IdeaProjects\springboot-advanced-samples\springboot-message-samples\springboot-activemq-samples\server\apache-activemq-5.15.9\bin\..\data\kahadb\db.data. Recovering pageFile free list due to prior unclean shutdown.. | org.apache.activemq.store.kahadb.disk.page.PageFile | KahaDB Index Free Page Recovery
+2019-07-11 13:11:26,651 | INFO  | Page File: C:\Users\chenzw\IdeaProjects\springboot-advanced-samples\springboot-message-samples\springboot-activemq-samples\server\apache-activemq-5.15.9\bin\..\data\kahadb\db.data. Recovered pageFile free list of size: 0 | org.apache.activemq.store.kahadb.disk.page.PageFile | KahaDB Index Free Page Recovery
+2019-07-11 13:11:26,655 | INFO  | KahaDB is version 6 | org.apache.activemq.store.kahadb.MessageDatabase | main
+2019-07-11 13:11:26,741 | INFO  | Recovering from the journal @1:622 | org.apache.activemq.store.kahadb.MessageDatabase | main
+2019-07-11 13:11:26,745 | INFO  | Recovery replayed 1 operations from the journal in 0.08 seconds. | org.apache.activemq.store.kahadb.MessageDatabase | main
+2019-07-11 13:11:26,760 | INFO  | PListStore:[C:\Users\chenzw\IdeaProjects\springboot-advanced-samples\springboot-message-samples\springboot-activemq-samples\server\apache-activemq-5.15.9\bin\..\data\localhost\tmp_storage] started | org.apache.activemq.store.kahadb.plist.PListStoreImpl | main
+2019-07-11 13:11:26,927 | INFO  | Apache ActiveMQ 5.15.9 (localhost, ID:DESKTOP-ML2S7G9-51890-1562821886782-0:1) is starting | org.apache.activemq.broker.BrokerService | main
+2019-07-11 13:11:26,959 | INFO  | Listening for connections at: tcp://DESKTOP-ML2S7G9:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2019-07-11 13:11:26,962 | INFO  | Connector openwire started | org.apache.activemq.broker.TransportConnector | main
+2019-07-11 13:11:26,975 | INFO  | Listening for connections at: amqp://DESKTOP-ML2S7G9:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2019-07-11 13:11:26,978 | INFO  | Connector amqp started | org.apache.activemq.broker.TransportConnector | main
+2019-07-11 13:11:26,987 | INFO  | Listening for connections at: stomp://DESKTOP-ML2S7G9:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2019-07-11 13:11:26,991 | INFO  | Connector stomp started | org.apache.activemq.broker.TransportConnector | main
+2019-07-11 13:11:26,998 | INFO  | Listening for connections at: mqtt://DESKTOP-ML2S7G9:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2019-07-11 13:11:27,001 | INFO  | Connector mqtt started | org.apache.activemq.broker.TransportConnector | main
+2019-07-11 13:11:27,015 | INFO  | Starting Jetty server | org.apache.activemq.transport.WebTransportServerSupport | main
+2019-07-11 13:11:27,122 | INFO  | Creating Jetty connector | org.apache.activemq.transport.WebTransportServerSupport | main
+2019-07-11 13:11:27,211 | WARN  | ServletContext@o.e.j.s.ServletContextHandler@5454d35e{/,null,STARTING} has uncovered http methods for path: / | org.eclipse.jetty.security.SecurityHandler | main
+2019-07-11 13:11:27,282 | INFO  | Listening for connections at ws://DESKTOP-ML2S7G9:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.ws.WSTransportServer | main
+2019-07-11 13:11:27,284 | INFO  | Connector ws started | org.apache.activemq.broker.TransportConnector | main
+2019-07-11 13:11:27,289 | INFO  | Apache ActiveMQ 5.15.9 (localhost, ID:DESKTOP-ML2S7G9-51890-1562821886782-0:1) started | org.apache.activemq.broker.BrokerService | main
+2019-07-11 13:11:27,291 | INFO  | For help or more information please see: http://activemq.apache.org | org.apache.activemq.broker.BrokerService | main
+2019-07-11 13:11:27,312 | WARN  | Store limit is 102400 mb (current store usage is 0 mb). The data directory: C:\Users\chenzw\IdeaProjects\springboot-advanced-samples\springboot-message-samples\springboot-activemq-samples\server\apache-activemq-5.15.9\bin\..\data\kahadb only has 60768 mb of usable space. - resetting to maximum available disk space: 60768 mb | org.apache.activemq.broker.BrokerService | main
+2019-07-11 13:11:28,255 | INFO  | No Spring WebApplicationInitializer types detected on classpath | /admin | main
+2019-07-11 13:11:28,602 | INFO  | ActiveMQ WebConsole available at http://0.0.0.0:8161/ | org.apache.activemq.web.WebConsoleStarter | main
+2019-07-11 13:11:28,603 | INFO  | ActiveMQ Jolokia REST API available at http://0.0.0.0:8161/api/jolokia/ | org.apache.activemq.web.WebConsoleStarter | main
+2019-07-11 13:11:28,811 | INFO  | Initializing Spring FrameworkServlet 'dispatcher' | /admin | main
+2019-07-11 13:11:29,127 | INFO  | No Spring WebApplicationInitializer types detected on classpath | /api | main
+2019-07-11 13:11:31,512 | INFO  | jolokia-agent: Using policy access restrictor classpath:/jolokia-access.xml | /api | main
+2019-07-11 13:11:53,305 | INFO  | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@754ba872: startup date [Thu Jul 11 13:11:53 CST 2019]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | main
+2019-07-11 13:11:54,785 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[C:\Users\chenzw\IdeaProjects\springboot-advanced-samples\springboot-message-samples\springboot-activemq-samples\server\apache-activemq-5.15.9\bin\..\data\kahadb] | org.apache.activemq.broker.BrokerService | main
+2019-07-11 13:11:54,879 | INFO  | Page File: C:\Users\chenzw\IdeaProjects\springboot-advanced-samples\springboot-message-samples\springboot-activemq-samples\server\apache-activemq-5.15.9\bin\..\data\kahadb\db.data. Recovering pageFile free list due to prior unclean shutdown.. | org.apache.activemq.store.kahadb.disk.page.PageFile | KahaDB Index Free Page Recovery
+2019-07-11 13:11:54,889 | INFO  | Page File: C:\Users\chenzw\IdeaProjects\springboot-advanced-samples\springboot-message-samples\springboot-activemq-samples\server\apache-activemq-5.15.9\bin\..\data\kahadb\db.data. Recovered pageFile free list of size: 0 | org.apache.activemq.store.kahadb.disk.page.PageFile | KahaDB Index Free Page Recovery
+2019-07-11 13:11:54,894 | INFO  | KahaDB is version 6 | org.apache.activemq.store.kahadb.MessageDatabase | main
+2019-07-11 13:11:54,989 | INFO  | PListStore:[C:\Users\chenzw\IdeaProjects\springboot-advanced-samples\springboot-message-samples\springboot-activemq-samples\server\apache-activemq-5.15.9\bin\..\data\localhost\tmp_storage] started | org.apache.activemq.store.kahadb.plist.PListStoreImpl | main
+2019-07-11 13:11:55,146 | INFO  | Apache ActiveMQ 5.15.9 (localhost, ID:DESKTOP-ML2S7G9-51911-1562821915010-0:1) is starting | org.apache.activemq.broker.BrokerService | main
+2019-07-11 13:11:55,178 | INFO  | Listening for connections at: tcp://DESKTOP-ML2S7G9:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2019-07-11 13:11:55,181 | INFO  | Connector openwire started | org.apache.activemq.broker.TransportConnector | main
+2019-07-11 13:11:55,193 | INFO  | Listening for connections at: amqp://DESKTOP-ML2S7G9:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2019-07-11 13:11:55,197 | INFO  | Connector amqp started | org.apache.activemq.broker.TransportConnector | main
+2019-07-11 13:12:28,100 | INFO  | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@754ba872: startup date [Thu Jul 11 13:12:28 CST 2019]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | main
+2019-07-11 13:12:29,550 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[C:\Users\chenzw\IdeaProjects\springboot-advanced-samples\springboot-message-samples\springboot-activemq-samples\server\apache-activemq-5.15.9\bin\..\data\kahadb] | org.apache.activemq.broker.BrokerService | main
+2019-07-11 13:12:29,647 | INFO  | Page File: C:\Users\chenzw\IdeaProjects\springboot-advanced-samples\springboot-message-samples\springboot-activemq-samples\server\apache-activemq-5.15.9\bin\..\data\kahadb\db.data. Recovering pageFile free list due to prior unclean shutdown.. | org.apache.activemq.store.kahadb.disk.page.PageFile | KahaDB Index Free Page Recovery
+2019-07-11 13:12:29,658 | INFO  | Page File: C:\Users\chenzw\IdeaProjects\springboot-advanced-samples\springboot-message-samples\springboot-activemq-samples\server\apache-activemq-5.15.9\bin\..\data\kahadb\db.data. Recovered pageFile free list of size: 0 | org.apache.activemq.store.kahadb.disk.page.PageFile | KahaDB Index Free Page Recovery
+2019-07-11 13:12:29,663 | INFO  | KahaDB is version 6 | org.apache.activemq.store.kahadb.MessageDatabase | main
+2019-07-11 13:12:29,748 | INFO  | Recovering from the journal @1:1288 | org.apache.activemq.store.kahadb.MessageDatabase | main
+2019-07-11 13:12:29,752 | INFO  | Recovery replayed 1 operations from the journal in 0.077 seconds. | org.apache.activemq.store.kahadb.MessageDatabase | main
+2019-07-11 13:12:29,769 | INFO  | PListStore:[C:\Users\chenzw\IdeaProjects\springboot-advanced-samples\springboot-message-samples\springboot-activemq-samples\server\apache-activemq-5.15.9\bin\..\data\localhost\tmp_storage] started | org.apache.activemq.store.kahadb.plist.PListStoreImpl | main
+2019-07-11 13:12:29,938 | INFO  | Apache ActiveMQ 5.15.9 (localhost, ID:DESKTOP-ML2S7G9-51914-1562821949790-0:1) is starting | org.apache.activemq.broker.BrokerService | main
+2019-07-11 13:12:29,970 | INFO  | Listening for connections at: tcp://DESKTOP-ML2S7G9:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2019-07-11 13:12:29,975 | INFO  | Connector openwire started | org.apache.activemq.broker.TransportConnector | main
+2019-07-11 13:12:29,987 | INFO  | Listening for connections at: amqp://DESKTOP-ML2S7G9:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2019-07-11 13:12:29,990 | INFO  | Connector amqp started | org.apache.activemq.broker.TransportConnector | main
+2019-07-11 13:12:30,000 | INFO  | Listening for connections at: stomp://DESKTOP-ML2S7G9:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2019-07-11 13:12:30,003 | INFO  | Connector stomp started | org.apache.activemq.broker.TransportConnector | main
+2019-07-11 13:12:30,011 | INFO  | Listening for connections at: mqtt://DESKTOP-ML2S7G9:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2019-07-11 13:12:30,013 | INFO  | Connector mqtt started | org.apache.activemq.broker.TransportConnector | main
+2019-07-11 13:12:30,028 | INFO  | Starting Jetty server | org.apache.activemq.transport.WebTransportServerSupport | main
+2019-07-11 13:12:30,130 | INFO  | Creating Jetty connector | org.apache.activemq.transport.WebTransportServerSupport | main
+2019-07-11 13:12:30,223 | WARN  | ServletContext@o.e.j.s.ServletContextHandler@455b6df1{/,null,STARTING} has uncovered http methods for path: / | org.eclipse.jetty.security.SecurityHandler | main
+2019-07-11 13:12:30,296 | INFO  | Listening for connections at ws://DESKTOP-ML2S7G9:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.ws.WSTransportServer | main
+2019-07-11 13:12:30,298 | INFO  | Connector ws started | org.apache.activemq.broker.TransportConnector | main
+2019-07-11 13:12:30,301 | INFO  | Apache ActiveMQ 5.15.9 (localhost, ID:DESKTOP-ML2S7G9-51914-1562821949790-0:1) started | org.apache.activemq.broker.BrokerService | main
+2019-07-11 13:12:30,305 | INFO  | For help or more information please see: http://activemq.apache.org | org.apache.activemq.broker.BrokerService | main
+2019-07-11 13:12:30,326 | WARN  | Store limit is 102400 mb (current store usage is 0 mb). The data directory: C:\Users\chenzw\IdeaProjects\springboot-advanced-samples\springboot-message-samples\springboot-activemq-samples\server\apache-activemq-5.15.9\bin\..\data\kahadb only has 60764 mb of usable space. - resetting to maximum available disk space: 60764 mb | org.apache.activemq.broker.BrokerService | main
+2019-07-11 13:13:09,918 | INFO  | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@754ba872: startup date [Thu Jul 11 13:13:09 CST 2019]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | main
+2019-07-11 13:13:11,339 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[C:\Users\chenzw\IdeaProjects\springboot-advanced-samples\springboot-message-samples\springboot-activemq-samples\server\apache-activemq-5.15.9\bin\..\data\kahadb] | org.apache.activemq.broker.BrokerService | main
+2019-07-11 13:13:11,446 | INFO  | Page File: C:\Users\chenzw\IdeaProjects\springboot-advanced-samples\springboot-message-samples\springboot-activemq-samples\server\apache-activemq-5.15.9\bin\..\data\kahadb\db.data. Recovering pageFile free list due to prior unclean shutdown.. | org.apache.activemq.store.kahadb.disk.page.PageFile | KahaDB Index Free Page Recovery
+2019-07-11 13:13:11,454 | INFO  | Page File: C:\Users\chenzw\IdeaProjects\springboot-advanced-samples\springboot-message-samples\springboot-activemq-samples\server\apache-activemq-5.15.9\bin\..\data\kahadb\db.data. Recovered pageFile free list of size: 0 | org.apache.activemq.store.kahadb.disk.page.PageFile | KahaDB Index Free Page Recovery
+2019-07-11 13:13:11,457 | INFO  | KahaDB is version 6 | org.apache.activemq.store.kahadb.MessageDatabase | main
+2019-07-11 13:13:11,531 | INFO  | Recovering from the journal @1:1288 | org.apache.activemq.store.kahadb.MessageDatabase | main
+2019-07-11 13:13:11,536 | INFO  | Recovery replayed 2 operations from the journal in 0.065 seconds. | org.apache.activemq.store.kahadb.MessageDatabase | main
+2019-07-11 13:13:11,553 | INFO  | PListStore:[C:\Users\chenzw\IdeaProjects\springboot-advanced-samples\springboot-message-samples\springboot-activemq-samples\server\apache-activemq-5.15.9\bin\..\data\localhost\tmp_storage] started | org.apache.activemq.store.kahadb.plist.PListStoreImpl | main
+2019-07-11 13:13:11,732 | INFO  | Apache ActiveMQ 5.15.9 (localhost, ID:DESKTOP-ML2S7G9-51928-1562821991574-0:1) is starting | org.apache.activemq.broker.BrokerService | main
+2019-07-11 13:13:11,765 | INFO  | Listening for connections at: tcp://DESKTOP-ML2S7G9:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2019-07-11 13:13:11,770 | INFO  | Connector openwire started | org.apache.activemq.broker.TransportConnector | main
+2019-07-11 13:13:11,782 | INFO  | Listening for connections at: amqp://DESKTOP-ML2S7G9:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2019-07-11 13:13:11,785 | INFO  | Connector amqp started | org.apache.activemq.broker.TransportConnector | main
+2019-07-11 13:13:11,793 | INFO  | Listening for connections at: stomp://DESKTOP-ML2S7G9:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2019-07-11 13:13:11,796 | INFO  | Connector stomp started | org.apache.activemq.broker.TransportConnector | main
+2019-07-11 13:13:11,803 | INFO  | Listening for connections at: mqtt://DESKTOP-ML2S7G9:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2019-07-11 13:13:11,806 | INFO  | Connector mqtt started | org.apache.activemq.broker.TransportConnector | main
+2019-07-11 13:13:11,820 | INFO  | Starting Jetty server | org.apache.activemq.transport.WebTransportServerSupport | main
+2019-07-11 13:13:11,879 | INFO  | Creating Jetty connector | org.apache.activemq.transport.WebTransportServerSupport | main
+2019-07-11 13:13:11,966 | WARN  | ServletContext@o.e.j.s.ServletContextHandler@5454d35e{/,null,STARTING} has uncovered http methods for path: / | org.eclipse.jetty.security.SecurityHandler | main
+2019-07-11 13:13:12,036 | INFO  | Listening for connections at ws://DESKTOP-ML2S7G9:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.ws.WSTransportServer | main
+2019-07-11 13:13:12,037 | INFO  | Connector ws started | org.apache.activemq.broker.TransportConnector | main
+2019-07-11 13:13:12,040 | INFO  | Apache ActiveMQ 5.15.9 (localhost, ID:DESKTOP-ML2S7G9-51928-1562821991574-0:1) started | org.apache.activemq.broker.BrokerService | main
+2019-07-11 13:13:12,042 | INFO  | For help or more information please see: http://activemq.apache.org | org.apache.activemq.broker.BrokerService | main
+2019-07-11 13:13:12,065 | WARN  | Store limit is 102400 mb (current store usage is 0 mb). The data directory: C:\Users\chenzw\IdeaProjects\springboot-advanced-samples\springboot-message-samples\springboot-activemq-samples\server\apache-activemq-5.15.9\bin\..\data\kahadb only has 60772 mb of usable space. - resetting to maximum available disk space: 60772 mb | org.apache.activemq.broker.BrokerService | main
+2019-07-11 13:13:13,093 | INFO  | No Spring WebApplicationInitializer types detected on classpath | /admin | main
+2019-07-11 13:14:27,855 | INFO  | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@754ba872: startup date [Thu Jul 11 13:14:27 CST 2019]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | main
+2019-07-11 13:15:03,807 | INFO  | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@754ba872: startup date [Thu Jul 11 13:15:03 CST 2019]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | main
+2019-07-11 13:15:05,246 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[C:\Users\chenzw\IdeaProjects\springboot-advanced-samples\springboot-message-samples\springboot-activemq-samples\server\apache-activemq-5.15.9\bin\..\data\kahadb] | org.apache.activemq.broker.BrokerService | main
+2019-07-11 13:15:05,354 | INFO  | Page File: C:\Users\chenzw\IdeaProjects\springboot-advanced-samples\springboot-message-samples\springboot-activemq-samples\server\apache-activemq-5.15.9\bin\..\data\kahadb\db.data. Recovering pageFile free list due to prior unclean shutdown.. | org.apache.activemq.store.kahadb.disk.page.PageFile | KahaDB Index Free Page Recovery
+2019-07-11 13:15:05,363 | INFO  | Page File: C:\Users\chenzw\IdeaProjects\springboot-advanced-samples\springboot-message-samples\springboot-activemq-samples\server\apache-activemq-5.15.9\bin\..\data\kahadb\db.data. Recovered pageFile free list of size: 0 | org.apache.activemq.store.kahadb.disk.page.PageFile | KahaDB Index Free Page Recovery
+2019-07-11 13:15:05,368 | INFO  | KahaDB is version 6 | org.apache.activemq.store.kahadb.MessageDatabase | main
+2019-07-11 13:15:05,451 | INFO  | Recovering from the journal @1:1288 | org.apache.activemq.store.kahadb.MessageDatabase | main
+2019-07-11 13:15:05,456 | INFO  | Recovery replayed 3 operations from the journal in 0.077 seconds. | org.apache.activemq.store.kahadb.MessageDatabase | main
+2019-07-11 13:15:05,473 | INFO  | PListStore:[C:\Users\chenzw\IdeaProjects\springboot-advanced-samples\springboot-message-samples\springboot-activemq-samples\server\apache-activemq-5.15.9\bin\..\data\localhost\tmp_storage] started | org.apache.activemq.store.kahadb.plist.PListStoreImpl | main
+2019-07-11 13:15:05,667 | INFO  | Apache ActiveMQ 5.15.9 (localhost, ID:DESKTOP-ML2S7G9-51943-1562822105497-0:1) is starting | org.apache.activemq.broker.BrokerService | main
+2019-07-11 13:15:05,702 | INFO  | Listening for connections at: tcp://DESKTOP-ML2S7G9:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2019-07-11 13:15:05,705 | INFO  | Connector openwire started | org.apache.activemq.broker.TransportConnector | main
+2019-07-11 13:15:05,716 | INFO  | Listening for connections at: amqp://DESKTOP-ML2S7G9:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2019-07-11 13:15:05,721 | INFO  | Connector amqp started | org.apache.activemq.broker.TransportConnector | main
+2019-07-11 13:15:05,733 | INFO  | Listening for connections at: stomp://DESKTOP-ML2S7G9:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2019-07-11 13:15:05,737 | INFO  | Connector stomp started | org.apache.activemq.broker.TransportConnector | main
+2019-07-11 13:15:05,744 | INFO  | Listening for connections at: mqtt://DESKTOP-ML2S7G9:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2019-07-11 13:15:05,747 | INFO  | Connector mqtt started | org.apache.activemq.broker.TransportConnector | main
+2019-07-11 13:15:05,761 | INFO  | Starting Jetty server | org.apache.activemq.transport.WebTransportServerSupport | main
+2019-07-11 13:15:05,819 | INFO  | Creating Jetty connector | org.apache.activemq.transport.WebTransportServerSupport | main
+2019-07-11 13:15:05,907 | WARN  | ServletContext@o.e.j.s.ServletContextHandler@455b6df1{/,null,STARTING} has uncovered http methods for path: / | org.eclipse.jetty.security.SecurityHandler | main
+2019-07-11 13:15:06,017 | INFO  | Listening for connections at ws://DESKTOP-ML2S7G9:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.ws.WSTransportServer | main
+2019-07-11 13:15:06,020 | INFO  | Connector ws started | org.apache.activemq.broker.TransportConnector | main
+2019-07-11 13:15:06,023 | INFO  | Apache ActiveMQ 5.15.9 (localhost, ID:DESKTOP-ML2S7G9-51943-1562822105497-0:1) started | org.apache.activemq.broker.BrokerService | main
+2019-07-11 13:15:06,026 | INFO  | For help or more information please see: http://activemq.apache.org | org.apache.activemq.broker.BrokerService | main
+2019-07-11 13:15:06,050 | WARN  | Store limit is 102400 mb (current store usage is 0 mb). The data directory: C:\Users\chenzw\IdeaProjects\springboot-advanced-samples\springboot-message-samples\springboot-activemq-samples\server\apache-activemq-5.15.9\bin\..\data\kahadb only has 60775 mb of usable space. - resetting to maximum available disk space: 60775 mb | org.apache.activemq.broker.BrokerService | main
+2019-07-11 13:15:22,760 | INFO  | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@754ba872: startup date [Thu Jul 11 13:15:22 CST 2019]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | main
+2019-07-11 13:15:51,135 | INFO  | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@754ba872: startup date [Thu Jul 11 13:15:51 CST 2019]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | main
+2019-07-11 13:15:53,274 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[C:\Users\chenzw\IdeaProjects\springboot-advanced-samples\springboot-message-samples\springboot-activemq-samples\server\apache-activemq-5.15.9\bin\..\data\kahadb] | org.apache.activemq.broker.BrokerService | main
+2019-07-11 13:15:53,406 | INFO  | Page File: C:\Users\chenzw\IdeaProjects\springboot-advanced-samples\springboot-message-samples\springboot-activemq-samples\server\apache-activemq-5.15.9\bin\..\data\kahadb\db.data. Recovering pageFile free list due to prior unclean shutdown.. | org.apache.activemq.store.kahadb.disk.page.PageFile | KahaDB Index Free Page Recovery
+2019-07-11 13:15:53,418 | INFO  | Page File: C:\Users\chenzw\IdeaProjects\springboot-advanced-samples\springboot-message-samples\springboot-activemq-samples\server\apache-activemq-5.15.9\bin\..\data\kahadb\db.data. Recovered pageFile free list of size: 0 | org.apache.activemq.store.kahadb.disk.page.PageFile | KahaDB Index Free Page Recovery
+2019-07-11 13:15:53,422 | INFO  | KahaDB is version 6 | org.apache.activemq.store.kahadb.MessageDatabase | main
+2019-07-11 13:15:53,466 | INFO  | Recovering from the journal @1:1288 | org.apache.activemq.store.kahadb.MessageDatabase | main
+2019-07-11 13:15:53,477 | INFO  | Recovery replayed 4 operations from the journal in 0.041 seconds. | org.apache.activemq.store.kahadb.MessageDatabase | main
+2019-07-11 13:15:53,565 | INFO  | PListStore:[C:\Users\chenzw\IdeaProjects\springboot-advanced-samples\springboot-message-samples\springboot-activemq-samples\server\apache-activemq-5.15.9\bin\..\data\localhost\tmp_storage] started | org.apache.activemq.store.kahadb.plist.PListStoreImpl | main
+2019-07-11 13:15:53,762 | INFO  | Apache ActiveMQ 5.15.9 (localhost, ID:DESKTOP-ML2S7G9-51955-1562822153599-0:1) is starting | org.apache.activemq.broker.BrokerService | main
+2019-07-11 13:15:53,806 | INFO  | Listening for connections at: tcp://DESKTOP-ML2S7G9:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2019-07-11 13:15:53,815 | INFO  | Connector openwire started | org.apache.activemq.broker.TransportConnector | main
+2019-07-11 13:15:53,833 | INFO  | Listening for connections at: amqp://DESKTOP-ML2S7G9:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2019-07-11 13:15:53,838 | INFO  | Connector amqp started | org.apache.activemq.broker.TransportConnector | main
+2019-07-11 13:15:53,851 | INFO  | Listening for connections at: stomp://DESKTOP-ML2S7G9:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2019-07-11 13:15:53,855 | INFO  | Connector stomp started | org.apache.activemq.broker.TransportConnector | main
+2019-07-11 13:15:53,877 | INFO  | Listening for connections at: mqtt://DESKTOP-ML2S7G9:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2019-07-11 13:15:53,883 | INFO  | Connector mqtt started | org.apache.activemq.broker.TransportConnector | main
+2019-07-11 13:15:53,904 | INFO  | Starting Jetty server | org.apache.activemq.transport.WebTransportServerSupport | main
+2019-07-11 13:15:54,078 | INFO  | Creating Jetty connector | org.apache.activemq.transport.WebTransportServerSupport | main
+2019-07-11 13:15:54,227 | WARN  | ServletContext@o.e.j.s.ServletContextHandler@455b6df1{/,null,STARTING} has uncovered http methods for path: / | org.eclipse.jetty.security.SecurityHandler | main
+2019-07-11 13:15:54,371 | INFO  | Listening for connections at ws://DESKTOP-ML2S7G9:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.ws.WSTransportServer | main
+2019-07-11 13:15:54,374 | INFO  | Connector ws started | org.apache.activemq.broker.TransportConnector | main
+2019-07-11 13:15:54,383 | INFO  | Apache ActiveMQ 5.15.9 (localhost, ID:DESKTOP-ML2S7G9-51955-1562822153599-0:1) started | org.apache.activemq.broker.BrokerService | main
+2019-07-11 13:15:54,389 | INFO  | For help or more information please see: http://activemq.apache.org | org.apache.activemq.broker.BrokerService | main
+2019-07-11 13:15:54,419 | WARN  | Store limit is 102400 mb (current store usage is 0 mb). The data directory: C:\Users\chenzw\IdeaProjects\springboot-advanced-samples\springboot-message-samples\springboot-activemq-samples\server\apache-activemq-5.15.9\bin\..\data\kahadb only has 60775 mb of usable space. - resetting to maximum available disk space: 60775 mb | org.apache.activemq.broker.BrokerService | main
+2019-07-11 13:15:55,904 | INFO  | No Spring WebApplicationInitializer types detected on classpath | /admin | main
+2019-07-11 13:15:56,174 | INFO  | ActiveMQ WebConsole available at http://0.0.0.0:8161/ | org.apache.activemq.web.WebConsoleStarter | main
+2019-07-11 13:15:56,179 | INFO  | ActiveMQ Jolokia REST API available at http://0.0.0.0:8161/api/jolokia/ | org.apache.activemq.web.WebConsoleStarter | main
+2019-07-11 13:15:56,434 | INFO  | Initializing Spring FrameworkServlet 'dispatcher' | /admin | main
+2019-07-11 13:15:56,940 | INFO  | No Spring WebApplicationInitializer types detected on classpath | /api | main
+2019-07-11 13:15:59,293 | INFO  | jolokia-agent: Using policy access restrictor classpath:/jolokia-access.xml | /api | main
+2019-07-11 19:02:36,807 | INFO  | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@754ba872: startup date [Thu Jul 11 19:02:36 CST 2019]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | main
+2019-07-11 19:02:38,781 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[C:\Users\chenzw\IdeaProjects\springboot-advanced-samples\springboot-message-samples\springboot-activemq-samples\server\apache-activemq-5.15.9\bin\..\data\kahadb] | org.apache.activemq.broker.BrokerService | main
+2019-07-11 19:02:38,895 | INFO  | Page File: C:\Users\chenzw\IdeaProjects\springboot-advanced-samples\springboot-message-samples\springboot-activemq-samples\server\apache-activemq-5.15.9\bin\..\data\kahadb\db.data. Recovering pageFile free list due to prior unclean shutdown.. | org.apache.activemq.store.kahadb.disk.page.PageFile | KahaDB Index Free Page Recovery
+2019-07-11 19:02:38,905 | INFO  | Page File: C:\Users\chenzw\IdeaProjects\springboot-advanced-samples\springboot-message-samples\springboot-activemq-samples\server\apache-activemq-5.15.9\bin\..\data\kahadb\db.data. Recovered pageFile free list of size: 0 | org.apache.activemq.store.kahadb.disk.page.PageFile | KahaDB Index Free Page Recovery
+2019-07-11 19:02:38,909 | INFO  | KahaDB is version 6 | org.apache.activemq.store.kahadb.MessageDatabase | main
+2019-07-11 19:02:39,007 | INFO  | PListStore:[C:\Users\chenzw\IdeaProjects\springboot-advanced-samples\springboot-message-samples\springboot-activemq-samples\server\apache-activemq-5.15.9\bin\..\data\localhost\tmp_storage] started | org.apache.activemq.store.kahadb.plist.PListStoreImpl | main
+2019-07-11 19:02:39,178 | INFO  | Apache ActiveMQ 5.15.9 (localhost, ID:DESKTOP-ML2S7G9-54411-1562842959035-0:1) is starting | org.apache.activemq.broker.BrokerService | main
+2019-07-11 19:02:39,213 | INFO  | Listening for connections at: tcp://DESKTOP-ML2S7G9:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2019-07-11 19:02:39,219 | INFO  | Connector openwire started | org.apache.activemq.broker.TransportConnector | main
+2019-07-11 19:02:39,232 | INFO  | Listening for connections at: amqp://DESKTOP-ML2S7G9:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2019-07-11 19:02:39,236 | INFO  | Connector amqp started | org.apache.activemq.broker.TransportConnector | main
+2019-07-11 19:02:39,247 | INFO  | Listening for connections at: stomp://DESKTOP-ML2S7G9:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2019-07-11 19:02:39,251 | INFO  | Connector stomp started | org.apache.activemq.broker.TransportConnector | main
+2019-07-11 19:02:39,264 | INFO  | Listening for connections at: mqtt://DESKTOP-ML2S7G9:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2019-07-11 19:02:39,267 | INFO  | Connector mqtt started | org.apache.activemq.broker.TransportConnector | main
+2019-07-11 19:02:39,288 | INFO  | Starting Jetty server | org.apache.activemq.transport.WebTransportServerSupport | main
+2019-07-11 19:02:39,362 | INFO  | Creating Jetty connector | org.apache.activemq.transport.WebTransportServerSupport | main
+2019-07-11 19:02:39,471 | WARN  | ServletContext@o.e.j.s.ServletContextHandler@71329995{/,null,STARTING} has uncovered http methods for path: / | org.eclipse.jetty.security.SecurityHandler | main
+2019-07-11 19:02:39,569 | INFO  | Listening for connections at ws://DESKTOP-ML2S7G9:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.ws.WSTransportServer | main
+2019-07-11 19:02:39,573 | INFO  | Connector ws started | org.apache.activemq.broker.TransportConnector | main
+2019-07-11 19:02:39,576 | INFO  | Apache ActiveMQ 5.15.9 (localhost, ID:DESKTOP-ML2S7G9-54411-1562842959035-0:1) started | org.apache.activemq.broker.BrokerService | main
+2019-07-11 19:02:39,580 | INFO  | For help or more information please see: http://activemq.apache.org | org.apache.activemq.broker.BrokerService | main
+2019-07-11 19:02:39,607 | WARN  | Store limit is 102400 mb (current store usage is 0 mb). The data directory: C:\Users\chenzw\IdeaProjects\springboot-advanced-samples\springboot-message-samples\springboot-activemq-samples\server\apache-activemq-5.15.9\bin\..\data\kahadb only has 60652 mb of usable space. - resetting to maximum available disk space: 60652 mb | org.apache.activemq.broker.BrokerService | main
+2019-07-11 19:02:41,039 | INFO  | No Spring WebApplicationInitializer types detected on classpath | /admin | main
+2019-07-11 19:02:41,278 | INFO  | ActiveMQ WebConsole available at http://0.0.0.0:8161/ | org.apache.activemq.web.WebConsoleStarter | main
+2019-07-11 19:02:41,280 | INFO  | ActiveMQ Jolokia REST API available at http://0.0.0.0:8161/api/jolokia/ | org.apache.activemq.web.WebConsoleStarter | main
+2019-07-11 19:02:41,507 | INFO  | Initializing Spring FrameworkServlet 'dispatcher' | /admin | main
+2019-07-11 19:02:41,885 | INFO  | No Spring WebApplicationInitializer types detected on classpath | /api | main
+2019-07-11 19:02:44,577 | INFO  | jolokia-agent: Using policy access restrictor classpath:/jolokia-access.xml | /api | main
+2019-07-11 19:03:25,909 | WARN  | Transport Connection to: tcp://127.0.0.1:54430 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:54430@61616
+2019-07-11 19:03:39,204 | INFO  | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@754ba872: startup date [Thu Jul 11 19:03:39 CST 2019]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | main
+2019-07-11 19:03:41,833 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[C:\Users\chenzw\IdeaProjects\springboot-advanced-samples\springboot-message-samples\springboot-activemq-samples\server\apache-activemq-5.15.9\bin\..\data\kahadb] | org.apache.activemq.broker.BrokerService | main
+2019-07-11 19:03:41,872 | INFO  | Database C:\Users\chenzw\IdeaProjects\springboot-advanced-samples\springboot-message-samples\springboot-activemq-samples\server\apache-activemq-5.15.9\bin\..\data\kahadb\lock is locked by another server. This broker is now in slave mode waiting a lock to be acquired | org.apache.activemq.store.SharedFileLocker | main
+2019-07-11 19:04:42,663 | WARN  | Transport Connection to: tcp://127.0.0.1:54459 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:54459@61616
+2019-07-11 19:04:43,821 | WARN  | Transport Connection to: tcp://127.0.0.1:54451 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:54451@61616
+2019-07-11 19:09:25,784 | INFO  | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@754ba872: startup date [Thu Jul 11 19:09:25 CST 2019]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | main
+2019-07-11 19:09:28,464 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[C:\Users\chenzw\IdeaProjects\springboot-advanced-samples\springboot-message-samples\springboot-activemq-samples\server\apache-activemq-5.15.9\bin\..\data\kahadb] | org.apache.activemq.broker.BrokerService | main
+2019-07-11 19:09:28,607 | INFO  | Page File: C:\Users\chenzw\IdeaProjects\springboot-advanced-samples\springboot-message-samples\springboot-activemq-samples\server\apache-activemq-5.15.9\bin\..\data\kahadb\db.data. Recovering pageFile free list due to prior unclean shutdown.. | org.apache.activemq.store.kahadb.disk.page.PageFile | KahaDB Index Free Page Recovery
+2019-07-11 19:09:28,625 | INFO  | Page File: C:\Users\chenzw\IdeaProjects\springboot-advanced-samples\springboot-message-samples\springboot-activemq-samples\server\apache-activemq-5.15.9\bin\..\data\kahadb\db.data. Recovered pageFile free list of size: 0 | org.apache.activemq.store.kahadb.disk.page.PageFile | KahaDB Index Free Page Recovery
+2019-07-11 19:09:28,630 | INFO  | KahaDB is version 6 | org.apache.activemq.store.kahadb.MessageDatabase | main
+2019-07-11 19:09:28,763 | INFO  | PListStore:[C:\Users\chenzw\IdeaProjects\springboot-advanced-samples\springboot-message-samples\springboot-activemq-samples\server\apache-activemq-5.15.9\bin\..\data\localhost\tmp_storage] started | org.apache.activemq.store.kahadb.plist.PListStoreImpl | main
+2019-07-11 19:09:28,948 | INFO  | Apache ActiveMQ 5.15.9 (localhost, ID:DESKTOP-ML2S7G9-54907-1562843368789-0:1) is starting | org.apache.activemq.broker.BrokerService | main
+2019-07-11 19:09:29,138 | INFO  | Listening for connections at: tcp://DESKTOP-ML2S7G9:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2019-07-11 19:09:29,143 | INFO  | Connector openwire started | org.apache.activemq.broker.TransportConnector | main
+2019-07-11 19:09:29,159 | INFO  | Listening for connections at: amqp://DESKTOP-ML2S7G9:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2019-07-11 19:09:29,166 | INFO  | Connector amqp started | org.apache.activemq.broker.TransportConnector | main
+2019-07-11 19:09:29,175 | INFO  | Listening for connections at: stomp://DESKTOP-ML2S7G9:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2019-07-11 19:09:29,180 | INFO  | Connector stomp started | org.apache.activemq.broker.TransportConnector | main
+2019-07-11 19:09:29,191 | INFO  | Listening for connections at: mqtt://DESKTOP-ML2S7G9:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2019-07-11 19:09:29,194 | INFO  | Connector mqtt started | org.apache.activemq.broker.TransportConnector | main
+2019-07-11 19:09:29,211 | INFO  | Starting Jetty server | org.apache.activemq.transport.WebTransportServerSupport | main
+2019-07-11 19:09:29,344 | INFO  | Creating Jetty connector | org.apache.activemq.transport.WebTransportServerSupport | main
+2019-07-11 19:09:29,516 | WARN  | ServletContext@o.e.j.s.ServletContextHandler@e383572{/,null,STARTING} has uncovered http methods for path: / | org.eclipse.jetty.security.SecurityHandler | main
+2019-07-11 19:09:29,666 | INFO  | Listening for connections at ws://DESKTOP-ML2S7G9:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.ws.WSTransportServer | main
+2019-07-11 19:09:29,680 | INFO  | Connector ws started | org.apache.activemq.broker.TransportConnector | main
+2019-07-11 19:09:29,702 | INFO  | Apache ActiveMQ 5.15.9 (localhost, ID:DESKTOP-ML2S7G9-54907-1562843368789-0:1) started | org.apache.activemq.broker.BrokerService | main
+2019-07-11 19:09:29,708 | INFO  | For help or more information please see: http://activemq.apache.org | org.apache.activemq.broker.BrokerService | main
+2019-07-11 19:09:29,763 | WARN  | Store limit is 102400 mb (current store usage is 0 mb). The data directory: C:\Users\chenzw\IdeaProjects\springboot-advanced-samples\springboot-message-samples\springboot-activemq-samples\server\apache-activemq-5.15.9\bin\..\data\kahadb only has 60720 mb of usable space. - resetting to maximum available disk space: 60720 mb | org.apache.activemq.broker.BrokerService | main
+2019-07-11 19:09:31,611 | INFO  | No Spring WebApplicationInitializer types detected on classpath | /admin | main
+2019-07-11 19:09:31,916 | INFO  | ActiveMQ WebConsole available at http://0.0.0.0:8161/ | org.apache.activemq.web.WebConsoleStarter | main
+2019-07-11 19:09:31,918 | INFO  | ActiveMQ Jolokia REST API available at http://0.0.0.0:8161/api/jolokia/ | org.apache.activemq.web.WebConsoleStarter | main
+2019-07-11 19:09:32,252 | INFO  | Initializing Spring FrameworkServlet 'dispatcher' | /admin | main
+2019-07-11 19:09:33,477 | INFO  | No Spring WebApplicationInitializer types detected on classpath | /api | main
+2019-07-11 19:09:36,513 | INFO  | jolokia-agent: Using policy access restrictor classpath:/jolokia-access.xml | /api | main
+2019-07-11 19:10:02,128 | WARN  | Transport Connection to: tcp://127.0.0.1:54925 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:54925@61616
+2019-07-11 19:10:02,690 | WARN  | Transport Connection to: tcp://127.0.0.1:54929 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:54929@61616
