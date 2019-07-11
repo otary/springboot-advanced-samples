@@ -1,6 +1,5 @@
 package cn.chenzw.springboot.rabbitmq.sender;
 
-import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -8,22 +7,15 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringBootTest
-public class HelloSenderTests {
+public class FanoutSenderTests {
 
     @Autowired
-    HelloSender helloSender;
+    FanoutSender fanoutSender;
 
-    @Test
     public void testSend(){
-        System.out.println("-----------发送字符串-------------");
+        System.out.println("---------------Fanout Send--------------------");
 
-        helloSender.send();
+        fanoutSender.send();
     }
 
-    @Test
-    public void testSendObject(){
-        System.out.println("-----------发送Object对象-------------");
-
-        helloSender.sendObject();
-    }
 }

@@ -1,4 +1,4 @@
-package cn.chenzw.springboot.rabbitmq.receiver;
+package cn.chenzw.springboot.rabbitmq.receiver.direct;
 
 import cn.chenzw.springboot.rabbitmq.domain.dto.SysUserDto;
 import org.springframework.amqp.rabbit.annotation.RabbitHandler;
