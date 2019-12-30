@@ -1,7 +1,11 @@
 package cn.chenzw.springboot.elasticsearch.basic.domain.entity;
 
+import org.springframework.data.annotation.Id;
 import org.springframework.data.elasticsearch.annotations.Document;
+import org.springframework.data.elasticsearch.annotations.Field;
+import org.springframework.data.elasticsearch.annotations.FieldType;
 
+import javax.annotation.Generated;
 import java.io.Serializable;
 
 /**
@@ -12,6 +16,7 @@ public class SysUser implements Serializable {
 
     private static final long serialVersionUID = -1L;
 
+    @Id
     private Long id;
 
     /**
@@ -22,6 +27,7 @@ public class SysUser implements Serializable {
     /**
      * 名称（昵称或者真实姓名，不同系统不同定义）
      */
+    @Field(type = FieldType.Keyword)
     private String name;
 
     /**

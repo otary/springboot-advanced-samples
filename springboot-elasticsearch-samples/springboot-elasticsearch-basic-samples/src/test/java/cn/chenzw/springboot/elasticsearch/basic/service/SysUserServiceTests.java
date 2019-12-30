@@ -28,15 +28,20 @@ public class SysUserServiceTests {
     public void testSave() {
         for (int i = 0; i < 10; i++) {
             SysUser sysUser = new SysUser();
-            sysUser.setId(Long.parseLong(String.valueOf(i)));
+            //sysUser.setId(Long.parseLong(String.valueOf(i)));
             sysUser.setName("张三");
             sysUser.setUsername("zhangsan");
             sysUser.setState((byte) 1);
+            sysUser.setPassword("123456");
+            sysUser.setSalt("abc");
 
             sysUserService.save(sysUser);
         }
     }
 
+    /**
+     * 自定义查询字段
+     */
     @Test
     public void testSearch() {
         List<SysUser> sysUsers = sysUserService.search(0, 10, "zhangsan");
