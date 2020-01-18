@@ -12,6 +12,7 @@
         <module>springboot-message-samples</module>
         <module>springboot-hbase-samples</module>
         <module>springboot-zookeeper-samples</module>
+        <module>springboot-kafka-samples</module>
     </modules>
 
     <properties>
@@ -113,7 +114,6 @@
             <artifactId>commons-io</artifactId>
             <version>${commons-io.version}</version>
         </dependency>
-
 
         <dependency>
             <groupId>commons-codec</groupId>
