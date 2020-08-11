@@ -1,7 +1,8 @@
-package cn.chenzw.springboot.elasticsearch.basic.service;
+package cn.chenzw.springboot.elasticsearch.data.service;
 
-import cn.chenzw.springboot.elasticsearch.basic.domain.entity.SysUser;
-import cn.chenzw.springboot.elasticsearch.basic.repository.es.SysUserRepository;
+
+import cn.chenzw.springboot.elasticsearch.data.domain.entity.SysUser;
+import cn.chenzw.springboot.elasticsearch.data.repository.es.SysUserRepository;
 import org.elasticsearch.index.query.QueryBuilders;
 import org.elasticsearch.index.query.functionscore.FunctionScoreQueryBuilder;
 import org.elasticsearch.index.query.functionscore.ScoreFunctionBuilders;
@@ -14,6 +15,7 @@ import org.springframework.data.elasticsearch.core.query.SearchQuery;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+
 
 @Service
 public class SysUserService {

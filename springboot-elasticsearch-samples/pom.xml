@@ -13,14 +13,10 @@
     <packaging>pom</packaging>
     <modules>
         <module>springboot-elasticsearch-basic-samples</module>
+        <module>springboot-elasticsearch-data-samples</module>
     </modules>
 
 
-    <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-elasticsearch</artifactId>
-        </dependency>
-    </dependencies>
+
 
 </project>
