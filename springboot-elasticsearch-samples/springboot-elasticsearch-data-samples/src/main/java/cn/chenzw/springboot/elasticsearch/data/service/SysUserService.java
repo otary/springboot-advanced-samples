@@ -61,5 +61,8 @@ public class SysUserService {
         return sysUserRepository.findByUsernameLike(username, pageable);
     }
 
+    void deleteSysUserByUsername(String username) {
+        sysUserRepository.deleteSysUserByUsername(username);
+    }
 
 }

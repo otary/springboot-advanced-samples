@@ -10,7 +10,7 @@ import java.io.Serializable;
 /**
  * @author chenzw
  */
-@Document(indexName = "userindex", type = "user")
+@Document(indexName = "user_index", type = "user")
 public class SysUser implements Serializable {
 
     private static final long serialVersionUID = -1L;

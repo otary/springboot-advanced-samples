@@ -2,6 +2,7 @@ package cn.chenzw.springboot.elasticsearch.data.service;
 
 
 import cn.chenzw.springboot.elasticsearch.data.domain.entity.SysUser;
+import org.elasticsearch.index.query.BoolQueryBuilder;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -27,7 +28,7 @@ public class SysUserServiceTests {
     public void testSave() {
         for (int i = 0; i < 10; i++) {
             SysUser sysUser = new SysUser();
-            //sysUser.setId(Long.parseLong(String.valueOf(i)));
+            sysUser.setId(Long.parseLong(String.valueOf(i)));
             sysUser.setName("张三");
             sysUser.setUsername("zhangsan");
             sysUser.setState((byte) 1);
@@ -84,6 +85,11 @@ public class SysUserServiceTests {
 
         Assert.assertTrue(sysUserPage.getContent().size() > 0);
         Assert.assertTrue(sysUserPage.getTotalElements() > 0);
+    }
+
+    @Test
+    public void testDeleteSysUserByUsername(){
+        sysUserService.deleteSysUserByUsername("zhangsan");
     }
 
 }

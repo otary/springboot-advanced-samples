@@ -48,4 +48,11 @@ public interface SysUserRepository extends ElasticsearchRepository<SysUser, Long
      */
     Page<SysUser> findByUsernameLike(String username, Pageable pageable);
 
+    /**
+     * 条件删除
+     *
+     * @param username
+     */
+    void deleteSysUserByUsername(String username);
+
 }
