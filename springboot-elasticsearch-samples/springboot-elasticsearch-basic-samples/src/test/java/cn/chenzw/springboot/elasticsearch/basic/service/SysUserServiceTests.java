@@ -1,7 +1,5 @@
 package cn.chenzw.springboot.elasticsearch.basic.service;
 
-import cn.chenzw.springboot.elasticsearch.basic.domain.entity.SysUser;
-import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -64,6 +62,17 @@ public class SysUserServiceTests {
     @Test
     public void testInsertByObject() throws IOException {
         sysUserService.insertByObject();
+    }
+
+    @Test
+    public void testBulkInsert() throws IOException {
+        sysUserService.bulkInsert();
+    }
+
+
+    @Test
+    public void testUpdate() throws IOException {
+        sysUserService.update();
     }
 
     @Test
@@ -130,4 +139,15 @@ public class SysUserServiceTests {
     public void testQueryStringQuery() throws IOException {
         sysUserService.queryStringQuery();
     }
+
+    @Test
+    public void testBooleanQuery() throws IOException {
+        sysUserService.booleanQuery();
+    }
+
+    @Test
+    public void testSpanFirstQuery() throws IOException {
+        sysUserService.spanFirstQuery();
+    }
+
 }

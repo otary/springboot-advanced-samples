@@ -1,6 +1,5 @@
 package cn.chenzw.springboot.elasticsearch.data.service;
 
-
 import cn.chenzw.springboot.elasticsearch.data.domain.entity.SysUser;
 import cn.chenzw.springboot.elasticsearch.data.repository.es.SysUserRepository;
 import org.elasticsearch.index.query.QueryBuilders;

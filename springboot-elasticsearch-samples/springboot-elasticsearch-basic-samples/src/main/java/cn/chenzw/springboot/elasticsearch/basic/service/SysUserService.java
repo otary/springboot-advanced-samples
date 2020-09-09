@@ -4,6 +4,7 @@ import cn.chenzw.springboot.elasticsearch.basic.domain.entity.SysUser;
 import org.elasticsearch.action.ActionListener;
 import org.elasticsearch.action.admin.indices.alias.Alias;
 import org.elasticsearch.action.admin.indices.delete.DeleteIndexRequest;
+import org.elasticsearch.action.bulk.BulkRequest;
 import org.elasticsearch.action.delete.DeleteResponse;
 import org.elasticsearch.action.get.GetRequest;
 import org.elasticsearch.action.get.GetResponse;
@@ -13,19 +14,23 @@ import org.elasticsearch.action.search.SearchRequest;
 import org.elasticsearch.action.search.SearchResponse;
 import org.elasticsearch.action.support.IndicesOptions;
 import org.elasticsearch.action.support.master.AcknowledgedResponse;
+import org.elasticsearch.action.update.UpdateRequest;
+import org.elasticsearch.action.update.UpdateResponse;
 import org.elasticsearch.client.RequestOptions;
 import org.elasticsearch.client.RestHighLevelClient;
 import org.elasticsearch.client.indices.CreateIndexRequest;
 import org.elasticsearch.client.indices.CreateIndexResponse;
+import org.elasticsearch.client.indices.GetIndexRequest;
 import org.elasticsearch.common.settings.Settings;
 import org.elasticsearch.common.xcontent.XContentBuilder;
 import org.elasticsearch.common.xcontent.XContentFactory;
 import org.elasticsearch.common.xcontent.XContentType;
 import org.elasticsearch.index.query.*;
+import org.elasticsearch.index.reindex.UpdateByQueryRequest;
+import org.elasticsearch.index.reindex.UpdateByQueryRequestBuilder;
 import org.elasticsearch.search.SearchHit;
 import org.elasticsearch.search.SearchHits;
 import org.elasticsearch.search.builder.SearchSourceBuilder;
-import org.elasticsearch.search.fetch.subphase.FetchSourceContext;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,7 +39,6 @@ import org.springframework.stereotype.Service;
 
 import java.io.IOException;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 @Service
@@ -47,11 +51,6 @@ public class SysUserService {
     @Autowired
     private RestHighLevelClient restHighLevelClient;
 
-    /* public Long save(SysUser sysUser) {
-     *//*SysUser user = sysUserRepository.save(sysUser);
-        return user.getId();*//*
-    }*/
-
 
     /**
      * 新建索引
@@ -59,6 +58,11 @@ public class SysUserService {
      * @throws IOException
      */
     public void createIndex() throws IOException {
+        if (existsIndex(indexName)) {
+            logger.info("{}索引已存在!", indexName);
+            return;
+        }
+
         CreateIndexRequest request = new CreateIndexRequest(indexName);
 
         // 配置settings
@@ -132,6 +136,17 @@ public class SysUserService {
 
     }
 
+
+    /**
+     * 指定索引是否存在
+     *
+     * @return
+     * @throws IOException
+     */
+    public boolean existsIndex(String indexName) throws IOException {
+        GetIndexRequest getIndexRequest = new GetIndexRequest(indexName);
+        return restHighLevelClient.indices().exists(getIndexRequest, RequestOptions.DEFAULT);
+    }
 
     /**
      * 字符串形式插入
@@ -243,8 +258,67 @@ public class SysUserService {
                 indexResponse.getVersion());
     }
 
+
+    /**
+     * 批量插入
+     */
+    public void bulkInsert() throws IOException {
+        BulkRequest request = new BulkRequest();
+        for (int i = 0; i < 100; i++) {
+            Map<String, Object> userMap = new HashMap<>();
+            userMap.put("userName", "张" + i + "娃");
+            userMap.put("age", i);
+            userMap.put("orgId", i);
+            userMap.put("id", i);
+            request.add(new IndexRequest(
+                    indexName,
+                    "_doc"
+            ).source(userMap));
+        }
+        restHighLevelClient.bulk(request, RequestOptions.DEFAULT);
+    }
+
+
+    /**
+     * 根据指定条件更新
+     *
+     * @throws IOException
+     */
+    public void updateByQuery() throws IOException {
+        /*UpdateByQueryRequest updateByQueryRequest = new UpdateByQueryRequest();
+        updateByQueryRequest.setQuery(QueryBuilders.termQuery("id", "3"));
+
+        XContentBuilder builder = XContentFactory.jsonBuilder();
+        builder.startObject();
+        builder.field("userName", "赵六神");
+        builder.field("age", 12);
+        builder.field("orgId", 34);
+        builder.field("id", 5);
+        builder.endObject();
+        updateByQueryRequest.toXContent(builder);
+        restHighLevelClient.updateByQuery(updateByQueryRequest, RequestOptions.DEFAULT);*/
+    }
+
+    /**
+     * 根据ID修改
+     */
+    public void update() throws IOException {
+        Map<String, Object> userMap = new HashMap<>();
+        userMap.put("userName", "修改名称");
+        userMap.put("age", 10);
+        userMap.put("orgId", 111);
+        userMap.put("id", 3);
+
+        UpdateRequest updateRequest = new UpdateRequest(indexName, "_doc", "3").doc(userMap);
+        UpdateResponse response = restHighLevelClient.update(updateRequest, RequestOptions.DEFAULT);
+        if (response.status().getStatus() == 200) {
+            logger.info("更新成功!");
+        }
+    }
+
     private void search(QueryBuilder queryBuilder) throws IOException {
         SearchSourceBuilder sourceBuilder = new SearchSourceBuilder();
+        sourceBuilder.size(100);
         sourceBuilder.query(queryBuilder);
 
         SearchRequest searchRequest = new SearchRequest(indexName);
@@ -389,12 +463,36 @@ public class SysUserService {
 
 
     /**
-     *
      * @throws IOException
      */
     public void queryStringQuery() throws IOException {
+        // 查询含2的值
         QueryStringQueryBuilder queryBuilder = QueryBuilders.queryStringQuery("2");
 
         this.search(queryBuilder);
     }
+
+    /**
+     * 嵌套查询
+     */
+    public void booleanQuery() throws IOException {
+        BoolQueryBuilder queryBuilder = QueryBuilders.boolQuery()
+                .must(QueryBuilders.matchQuery("userName", "张"))
+                .must(QueryBuilders.matchQuery("orgId", 1));
+
+        this.search(queryBuilder);
+    }
+
+
+    /**
+     * 相对于起始位置的偏移量
+     */
+    public void spanFirstQuery() throws IOException {
+        // 相对于起始位置偏移大于3
+        SpanFirstQueryBuilder queryBuilder = QueryBuilders.spanFirstQuery(
+                QueryBuilders.spanTermQuery("userName", "娃"), 3);
+
+        this.search(queryBuilder);
+    }
+
 }
