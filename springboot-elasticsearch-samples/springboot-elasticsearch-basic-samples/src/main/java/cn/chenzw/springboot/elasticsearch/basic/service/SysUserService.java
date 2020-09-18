@@ -473,12 +473,17 @@ public class SysUserService {
     }
 
     /**
-     * 嵌套查询
+     * 多条件嵌套AND查询
      */
-    public void booleanQuery() throws IOException {
+    public void boolQuery() throws IOException {
         BoolQueryBuilder queryBuilder = QueryBuilders.boolQuery()
+                // userName=张 且 orgId=1
                 .must(QueryBuilders.matchQuery("userName", "张"))
-                .must(QueryBuilders.matchQuery("orgId", 1));
+                .must(QueryBuilders.matchQuery("orgId", 1))
+                // 且 age!=1
+                .mustNot(QueryBuilders.matchQuery("age", 1))
+                // 或 userName=李
+                .should(QueryBuilders.matchQuery("userName", "李"));
 
         this.search(queryBuilder);
     }
@@ -494,5 +499,6 @@ public class SysUserService {
 
         this.search(queryBuilder);
     }
+
 
 }

@@ -142,7 +142,7 @@ public class SysUserServiceTests {
 
     @Test
     public void testBooleanQuery() throws IOException {
-        sysUserService.booleanQuery();
+        sysUserService.boolQuery();
     }
 
     @Test
