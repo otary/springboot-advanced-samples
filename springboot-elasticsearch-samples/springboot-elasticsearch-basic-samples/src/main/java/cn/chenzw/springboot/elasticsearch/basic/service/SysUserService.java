@@ -1,13 +1,8 @@
 package cn.chenzw.springboot.elasticsearch.basic.service;
 
-import cn.chenzw.springboot.elasticsearch.basic.domain.entity.SysUser;
-import org.elasticsearch.action.ActionListener;
 import org.elasticsearch.action.admin.indices.alias.Alias;
 import org.elasticsearch.action.admin.indices.delete.DeleteIndexRequest;
 import org.elasticsearch.action.bulk.BulkRequest;
-import org.elasticsearch.action.delete.DeleteResponse;
-import org.elasticsearch.action.get.GetRequest;
-import org.elasticsearch.action.get.GetResponse;
 import org.elasticsearch.action.index.IndexRequest;
 import org.elasticsearch.action.index.IndexResponse;
 import org.elasticsearch.action.search.SearchRequest;
@@ -26,8 +21,8 @@ import org.elasticsearch.common.xcontent.XContentBuilder;
 import org.elasticsearch.common.xcontent.XContentFactory;
 import org.elasticsearch.common.xcontent.XContentType;
 import org.elasticsearch.index.query.*;
-import org.elasticsearch.index.reindex.UpdateByQueryRequest;
-import org.elasticsearch.index.reindex.UpdateByQueryRequestBuilder;
+import org.elasticsearch.index.reindex.BulkByScrollResponse;
+import org.elasticsearch.index.reindex.DeleteByQueryRequest;
 import org.elasticsearch.search.SearchHit;
 import org.elasticsearch.search.SearchHits;
 import org.elasticsearch.search.builder.SearchSourceBuilder;
@@ -38,8 +33,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
+
 
 @Service
 public class SysUserService {
@@ -133,6 +128,7 @@ public class SysUserService {
                 // 删除失败回调
             }
         });*/
+
 
     }
 
@@ -453,6 +449,28 @@ public class SysUserService {
     }
 
     /**
+     * 通配符查询,与slop一起使用，能保证分词间的邻近关系（slot表示邻近关系，默认为0）
+     * eg.
+     * <p>
+     * {
+     * "query": {
+     * "match_phrase": {
+     * "content" : {
+     * "query" : "白雪公主和苹果"，
+     * "slop" : 1    # 邻近关系为1，"白雪公主吃苹果"也会被查出
+     * }
+     * }
+     * }
+     * }
+     * </p>
+     */
+    public void matchPhraseQuery() throws IOException {
+        MatchPhraseQueryBuilder queryBuilder = QueryBuilders.matchPhraseQuery("userName", "张*");
+
+        this.search(queryBuilder);
+    }
+
+    /**
      * 正则表达式查询
      */
     public void regexpQuery() throws IOException {
@@ -500,5 +518,19 @@ public class SysUserService {
         this.search(queryBuilder);
     }
 
+
+    /**
+     * 根据条件删除
+     *
+     * @return
+     * @throws IOException
+     */
+    public long deleteByQuery() throws IOException {
+        DeleteByQueryRequest deleteByQueryRequest = new DeleteByQueryRequest(indexName);
+        deleteByQueryRequest.setQuery(QueryBuilders.matchQuery("userName", "张1娃"));
+
+        BulkByScrollResponse bulkByScrollResponse = restHighLevelClient.deleteByQuery(deleteByQueryRequest, RequestOptions.DEFAULT);
+        return bulkByScrollResponse.getDeleted();
+    }
 
 }

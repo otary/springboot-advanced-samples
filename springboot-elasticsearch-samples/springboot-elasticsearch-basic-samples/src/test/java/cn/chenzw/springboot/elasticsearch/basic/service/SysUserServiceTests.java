@@ -2,6 +2,8 @@ package cn.chenzw.springboot.elasticsearch.basic.service;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -13,6 +15,7 @@ import java.io.IOException;
 @SpringBootTest
 public class SysUserServiceTests {
 
+    private static final Logger logger = LoggerFactory.getLogger(SysUserServiceTests.class);
 
     @Autowired
     SysUserService sysUserService;
@@ -131,6 +134,11 @@ public class SysUserServiceTests {
     }
 
     @Test
+    public void testMatchPhraseQuery() throws IOException {
+        sysUserService.matchPhraseQuery();
+    }
+
+    @Test
     public void testRegexpQuery() throws IOException {
         sysUserService.regexpQuery();
     }
@@ -148,6 +156,12 @@ public class SysUserServiceTests {
     @Test
     public void testSpanFirstQuery() throws IOException {
         sysUserService.spanFirstQuery();
+    }
+
+    @Test
+    public void testDeleteByQuery() throws IOException {
+        long count = sysUserService.deleteByQuery();
+        logger.info("删除个数:{}", count);
     }
 
 }
