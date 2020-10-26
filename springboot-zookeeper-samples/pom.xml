@@ -11,5 +11,9 @@
 
     <artifactId>springboot-zookeeper-samples</artifactId>
 
+    <packaging>pom</packaging>
+    <modules>
+        <module>springboot-zookeeper-curator-samples</module>
+    </modules>
 
 </project>
