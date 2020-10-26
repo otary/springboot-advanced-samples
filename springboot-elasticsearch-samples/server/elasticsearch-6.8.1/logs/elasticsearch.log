@@ -1,0 +1,61 @@
+[2019-12-30T16:13:37,711][INFO ][o.e.e.NodeEnvironment    ] [29r2Tay] using [1] data paths, mounts [[(C:)]], net usable_space [341.9gb], net total_space [465.7gb], types [NTFS]
+[2019-12-30T16:13:37,713][INFO ][o.e.e.NodeEnvironment    ] [29r2Tay] heap size [989.8mb], compressed ordinary object pointers [true]
+[2019-12-30T16:13:37,748][INFO ][o.e.n.Node               ] [29r2Tay] node name derived from node ID [29r2TaynRBKOpQtt1jRThg]; set [node.name] to override
+[2019-12-30T16:13:37,749][INFO ][o.e.n.Node               ] [29r2Tay] version[6.8.1], pid[16940], build[default/zip/1fad4e1/2019-06-18T13:16:52.517138Z], OS[Windows 10/10.0/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_181/25.181-b13]
+[2019-12-30T16:13:37,750][INFO ][o.e.n.Node               ] [29r2Tay] JVM arguments [-Xms1g, -Xmx1g, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.io.tmpdir=C:\Users\chenzw\AppData\Local\Temp\elasticsearch, -XX:+HeapDumpOnOutOfMemoryError, -XX:HeapDumpPath=data, -XX:ErrorFile=logs/hs_err_pid%p.log, -XX:+PrintGCDetails, -XX:+PrintGCDateStamps, -XX:+PrintTenuringDistribution, -XX:+PrintGCApplicationStoppedTime, -Xloggc:logs/gc.log, -XX:+UseGCLogFileRotation, -XX:NumberOfGCLogFiles=32, -XX:GCLogFileSize=64m, -Delasticsearch, -Des.path.home=C:\Users\chenzw\IdeaProjects\springboot-advanced-samples\springboot-elasticsearch-samples\server\elasticsearch-6.8.1, -Des.path.conf=C:\Users\chenzw\IdeaProjects\springboot-advanced-samples\springboot-elasticsearch-samples\server\elasticsearch-6.8.1\config, -Des.distribution.flavor=default, -Des.distribution.type=zip]
+[2019-12-30T16:13:39,054][INFO ][o.e.p.PluginsService     ] [29r2Tay] loaded module [aggs-matrix-stats]
+[2019-12-30T16:13:39,054][INFO ][o.e.p.PluginsService     ] [29r2Tay] loaded module [analysis-common]
+[2019-12-30T16:13:39,054][INFO ][o.e.p.PluginsService     ] [29r2Tay] loaded module [ingest-common]
+[2019-12-30T16:13:39,055][INFO ][o.e.p.PluginsService     ] [29r2Tay] loaded module [ingest-geoip]
+[2019-12-30T16:13:39,055][INFO ][o.e.p.PluginsService     ] [29r2Tay] loaded module [ingest-user-agent]
+[2019-12-30T16:13:39,055][INFO ][o.e.p.PluginsService     ] [29r2Tay] loaded module [lang-expression]
+[2019-12-30T16:13:39,055][INFO ][o.e.p.PluginsService     ] [29r2Tay] loaded module [lang-mustache]
+[2019-12-30T16:13:39,055][INFO ][o.e.p.PluginsService     ] [29r2Tay] loaded module [lang-painless]
+[2019-12-30T16:13:39,056][INFO ][o.e.p.PluginsService     ] [29r2Tay] loaded module [mapper-extras]
+[2019-12-30T16:13:39,058][INFO ][o.e.p.PluginsService     ] [29r2Tay] loaded module [parent-join]
+[2019-12-30T16:13:39,060][INFO ][o.e.p.PluginsService     ] [29r2Tay] loaded module [percolator]
+[2019-12-30T16:13:39,062][INFO ][o.e.p.PluginsService     ] [29r2Tay] loaded module [rank-eval]
+[2019-12-30T16:13:39,062][INFO ][o.e.p.PluginsService     ] [29r2Tay] loaded module [reindex]
+[2019-12-30T16:13:39,063][INFO ][o.e.p.PluginsService     ] [29r2Tay] loaded module [repository-url]
+[2019-12-30T16:13:39,065][INFO ][o.e.p.PluginsService     ] [29r2Tay] loaded module [transport-netty4]
+[2019-12-30T16:13:39,065][INFO ][o.e.p.PluginsService     ] [29r2Tay] loaded module [tribe]
+[2019-12-30T16:13:39,066][INFO ][o.e.p.PluginsService     ] [29r2Tay] loaded module [x-pack-ccr]
+[2019-12-30T16:13:39,066][INFO ][o.e.p.PluginsService     ] [29r2Tay] loaded module [x-pack-core]
+[2019-12-30T16:13:39,067][INFO ][o.e.p.PluginsService     ] [29r2Tay] loaded module [x-pack-deprecation]
+[2019-12-30T16:13:39,067][INFO ][o.e.p.PluginsService     ] [29r2Tay] loaded module [x-pack-graph]
+[2019-12-30T16:13:39,068][INFO ][o.e.p.PluginsService     ] [29r2Tay] loaded module [x-pack-ilm]
+[2019-12-30T16:13:39,068][INFO ][o.e.p.PluginsService     ] [29r2Tay] loaded module [x-pack-logstash]
+[2019-12-30T16:13:39,069][INFO ][o.e.p.PluginsService     ] [29r2Tay] loaded module [x-pack-ml]
+[2019-12-30T16:13:39,069][INFO ][o.e.p.PluginsService     ] [29r2Tay] loaded module [x-pack-monitoring]
+[2019-12-30T16:13:39,070][INFO ][o.e.p.PluginsService     ] [29r2Tay] loaded module [x-pack-rollup]
+[2019-12-30T16:13:39,070][INFO ][o.e.p.PluginsService     ] [29r2Tay] loaded module [x-pack-security]
+[2019-12-30T16:13:39,071][INFO ][o.e.p.PluginsService     ] [29r2Tay] loaded module [x-pack-sql]
+[2019-12-30T16:13:39,071][INFO ][o.e.p.PluginsService     ] [29r2Tay] loaded module [x-pack-upgrade]
+[2019-12-30T16:13:39,072][INFO ][o.e.p.PluginsService     ] [29r2Tay] loaded module [x-pack-watcher]
+[2019-12-30T16:13:39,073][INFO ][o.e.p.PluginsService     ] [29r2Tay] loaded plugin [analysis-ik]
+[2019-12-30T16:13:42,512][INFO ][o.e.x.s.a.s.FileRolesStore] [29r2Tay] parsed [0] roles from file [C:\Users\chenzw\IdeaProjects\springboot-advanced-samples\springboot-elasticsearch-samples\server\elasticsearch-6.8.1\config\roles.yml]
+[2019-12-30T16:13:43,023][INFO ][o.e.x.m.p.l.CppLogMessageHandler] [29r2Tay] [controller/17340] [Main.cc@109] controller (64 bit): Version 6.8.1 (Build 6e3432237cefa4) Copyright (c) 2019 Elasticsearch BV
+[2019-12-30T16:13:43,293][DEBUG][o.e.a.ActionModule       ] [29r2Tay] Using REST wrapper from plugin org.elasticsearch.xpack.security.Security
+[2019-12-30T16:13:43,441][INFO ][o.e.d.DiscoveryModule    ] [29r2Tay] using discovery type [zen] and host providers [settings]
+[2019-12-30T16:13:43,912][INFO ][o.e.n.Node               ] [29r2Tay] initialized
+[2019-12-30T16:13:43,913][INFO ][o.e.n.Node               ] [29r2Tay] starting ...
+[2019-12-30T16:13:45,931][INFO ][o.e.t.TransportService   ] [29r2Tay] publish_address {10.0.75.1:9300}, bound_addresses {[::]:9300}
+[2019-12-30T16:13:45,943][INFO ][o.e.b.BootstrapChecks    ] [29r2Tay] bound or publishing to a non-loopback address, enforcing bootstrap checks
+[2019-12-30T16:13:49,013][INFO ][o.e.c.s.MasterService    ] [29r2Tay] zen-disco-elected-as-master ([0] nodes joined), reason: new_master {29r2Tay}{29r2TaynRBKOpQtt1jRThg}{o7RWvoHkTJqak-gblUSJKw}{10.0.75.1}{10.0.75.1:9300}{ml.machine_memory=34308059136, xpack.installed=true, ml.max_open_jobs=20, ml.enabled=true}
+[2019-12-30T16:13:55,054][INFO ][o.e.c.s.ClusterApplierService] [29r2Tay] new_master {29r2Tay}{29r2TaynRBKOpQtt1jRThg}{o7RWvoHkTJqak-gblUSJKw}{10.0.75.1}{10.0.75.1:9300}{ml.machine_memory=34308059136, xpack.installed=true, ml.max_open_jobs=20, ml.enabled=true}, reason: apply cluster state (from master [master {29r2Tay}{29r2TaynRBKOpQtt1jRThg}{o7RWvoHkTJqak-gblUSJKw}{10.0.75.1}{10.0.75.1:9300}{ml.machine_memory=34308059136, xpack.installed=true, ml.max_open_jobs=20, ml.enabled=true} committed version [1] source [zen-disco-elected-as-master ([0] nodes joined)]])
+[2019-12-30T16:13:55,113][INFO ][o.w.a.d.Monitor          ] [29r2Tay] try load config from C:\Users\chenzw\IdeaProjects\springboot-advanced-samples\springboot-elasticsearch-samples\server\elasticsearch-6.8.1\config\analysis-ik\IKAnalyzer.cfg.xml
+[2019-12-30T16:13:55,115][INFO ][o.w.a.d.Monitor          ] [29r2Tay] try load config from C:\Users\chenzw\IdeaProjects\springboot-advanced-samples\springboot-elasticsearch-samples\server\elasticsearch-6.8.1\plugins\ik\config\IKAnalyzer.cfg.xml
+[2019-12-30T16:13:55,424][WARN ][o.e.x.s.a.s.m.NativeRoleMappingStore] [29r2Tay] Failed to clear cache for realms [[]]
+[2019-12-30T16:13:55,453][INFO ][o.e.l.LicenseService     ] [29r2Tay] license [bd3c63dc-a65f-443e-9a33-7acf30be3490] mode [basic] - valid
+[2019-12-30T16:13:55,459][INFO ][o.e.g.GatewayService     ] [29r2Tay] recovered [1] indices into cluster_state
+[2019-12-30T16:13:55,716][INFO ][o.e.c.r.a.AllocationService] [29r2Tay] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[userindex][2]] ...]).
+[2019-12-30T16:13:55,983][INFO ][o.e.h.n.Netty4HttpServerTransport] [29r2Tay] publish_address {10.0.75.1:9200}, bound_addresses {[::]:9200}
+[2019-12-30T16:13:55,984][INFO ][o.e.n.Node               ] [29r2Tay] started
+[2019-12-30T16:20:49,546][INFO ][o.e.b.Bootstrap          ] [29r2Tay] running graceful exit on windows
+[2019-12-30T16:20:49,547][INFO ][o.e.n.Node               ] [29r2Tay] stopping ...
+[2019-12-30T16:20:49,554][INFO ][o.e.x.w.WatcherService   ] [29r2Tay] stopping watch service, reason [shutdown initiated]
+[2019-12-30T16:20:49,753][INFO ][o.e.x.m.p.l.CppLogMessageHandler] [29r2Tay] [controller/17340] [Main.cc@148] Ml controller exiting
+[2019-12-30T16:20:49,753][INFO ][o.e.x.m.p.NativeController] [29r2Tay] Native controller process has stopped - no new native processes can be started
+[2019-12-30T16:20:49,773][INFO ][o.e.n.Node               ] [29r2Tay] stopped
+[2019-12-30T16:20:49,773][INFO ][o.e.n.Node               ] [29r2Tay] closing ...
+[2019-12-30T16:20:49,794][INFO ][o.e.n.Node               ] [29r2Tay] closed

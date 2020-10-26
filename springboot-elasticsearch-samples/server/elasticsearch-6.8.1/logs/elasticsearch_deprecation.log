@@ -1,0 +1,2 @@
+[2019-12-30T16:13:39,470][WARN ][o.e.d.c.j.Joda           ] [29r2Tay] 'y' year should be replaced with 'u'. Use 'y' for year-of-era. Prefix your date format with '8' to use the new specifier.
+[2019-12-30T16:20:33,972][WARN ][o.e.d.r.a.a.i.RestGetIndicesAction] [29r2Tay] [types removal] The parameter include_type_name should be explicitly specified in get indices requests to prepare for 7.0. In 7.0 include_type_name will default to 'false', which means responses will omit the type name in mapping definitions.
