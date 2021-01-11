@@ -1,5 +1,6 @@
 package cn.chenzw.springboot.kafka.basic.samples.consumer;
 
+import lombok.extern.slf4j.Slf4j;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.springframework.kafka.listener.MessageListener;
 import org.springframework.stereotype.Component;
@@ -7,6 +8,7 @@ import org.springframework.stereotype.Component;
 /**
  * 消费者
  */
+@Slf4j
 @Component
 public class MessageConsumer implements MessageListener<String, String> {
 
@@ -17,6 +19,6 @@ public class MessageConsumer implements MessageListener<String, String> {
      */
     @Override
     public void onMessage(ConsumerRecord<String, String> data) {
-        System.out.printf("监听到消息: topic=%s, value=%s%n", data.topic(), data.value());
+        log.info("监听到消息: topic={}, value={}", data.topic(), data.value());
     }
 }
