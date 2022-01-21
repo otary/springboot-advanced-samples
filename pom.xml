@@ -29,7 +29,7 @@
         <commons-io.version>2.6</commons-io.version>
         <commons-codec.version>1.12</commons-codec.version>
         <druid.version>1.1.17</druid.version>
-        <h2.version>1.4.199</h2.version>
+        <h2.version>2.1.210</h2.version>
         <swagger2.version>2.9.2</swagger2.version>
 
         <redis.version>2.1.6.RELEASE</redis.version>
